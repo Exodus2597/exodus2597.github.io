@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	   	<meta name="author" content="chocomint">
 		<meta name="description" content="chatlog magician for gta:world">
-		<title>Chatlog Magician Reborn</title>
+		<title>chatlog true magician</title>
 		<meta name="keywords" content="GTAWorld, GTA:World, chatlog magician, chatlog, magician">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="libs/spectrum.min.css" rel="stylesheet">
@@ -48,20 +48,37 @@
 			</div>
 			<br
 			<div class="col-xs-12">
-				<center><button id="downloadOutput" class="btn btn-success disabled">Download as image (disabled)</button></center>
+				<center><button id="downloadOutputTransparent" class="btn btn-success">Download As Transparent Image</button></center><br>
+				<center><button id="downloadOutput" class="btn btn-success">Download As Filled Image</button></center>
 				<script src="libs/domtoimage.min.js"></script>
 				<script src="libs/FileSaver.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 				<script>
 					
-					/* $(document).ready(function() {
+					 $(document).ready(function() {
 						$("#downloadOutput").click(function() {
+							//generated").css("background-color", "transparent");
 							domtoimage.toBlob(document.getElementById('output'))
 							.then(function (blob) {
-								window.saveAs(blob, "chatlog.png")
+								window.saveAs(blob, new Date().toLocaleString().replaceAll(",", "_").replaceAll(" ", "_")
+																.replaceAll("/", "-").replace("__", "_").replaceAll(":", "-") + "_" + "chatlog.png")
+							})
+							.then(function(blob) {
+								$(".generated").css("background-color","#" + $("#color-picker").spectrum("get").toHex());
 							})
 						})
-					}) */
+						$("#downloadOutputTransparent").click(function() {
+							$(".generated").css("background-color", "transparent");
+							domtoimage.toBlob(document.getElementById('output'))
+							.then(function (blob) {
+								window.saveAs(blob, new Date().toLocaleString().replaceAll(",", "_").replaceAll(" ", "_")
+																.replaceAll("/", "-").replace("__", "_").replaceAll(":", "-") + "_" + "chatlog.png")
+							})
+							.then(function(blob) {
+								$(".generated").css("background-color","#" + $("#color-picker").spectrum("get").toHex());
+							})
+						})
+					}) 
 
 				</script>
 				
