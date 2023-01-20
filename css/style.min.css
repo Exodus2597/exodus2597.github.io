@@ -1,176 +1,141 @@
-body
-{
-	font-family:Arial, sans-serif;
-	width: 100%;
-	background: #282836;
-	margin: 0;
-	color: #b2b2b2;
+body {
+    font-family:Arial, sans-serif;
+    width: 100%;
+    background: #282836;
+    margin: 0;
+    color: #b2b2b2;
 }
-
 .textarea-input {
     width: 100%;
     border-radius: 5px;
     resize: none;
 }
-
 .generated {
     width: max-content;
 }
-
-#name
-{
-	max-width:280px;
-	text-transform:capitalize
+#name {
+    max-width:280px;
+    text-transform:capitalize 
 }
-.pld1
-{
+.pld1 {
     float:left;
     width:280px;
     margin:auto;
-	margin-right:5px;
+    margin-right:5px;
 }
-.pld2
-{
+.pld2 {
     float:left;
     width:280px;
     margin:auto;
-	margin-right:5px;
+    margin-right:5px;
 }
-.pld3
-{
+.pld3 {
     float:left;
     width:280px;
     margin:auto;
-	margin-right:5px;
+    margin-right:5px;
 }
-.pld4
-{
+.pld4 {
     float:left;
     width:280px;
     margin:auto;
-	margin-right:5px;
+    margin-right:5px;
 }
-.clog_settings
-{
-	font-weight:bold;
-	width:100%;
-	margin-left:auto;
-	margin-right:auto;
+.clog_settings {
+    font-weight:bold;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
 }
-#bal
-{
-	float:left;
-	margin-left:36%;
+#bal {
+    float:left;
+    margin-left:36%;
 }
-#jobb
-{
-	float:right;
-	margin-right:35%;
+#jobb {
+    float:right;
+    margin-right:35%;
 }
-.clearfix:after
-{
+.clearfix:after {
     content:" ";
     visibility:hidden;
     display:block;
     height:0;
     clear:both;
 }
-.output
-{
-	line-height:0;-webkit-font-smoothing:none!important;
-	font-weight:700;
-	color:#fff;
-	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-	letter-spacing:0;
-	font-size:12px
+.output {
+    line-height:0;
+   -webkit-font-smoothing:none!important;
+    font-weight:700;
+    color:#fff;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    letter-spacing:0;
+    font-size:12px 
 }
-.generated
-{
-	background-color:#000;
+.generated {
+    background-color:#000;
     display:inline-block;
-    padding:8px 5px
+    padding:8px 5px 
 }
-.me
-{
-	color:#c2a2da
+.me {
+    color:#c2a2da 
 }
 .death {
-    color: #ff0000
+    color: #ff0000 
 }
-.yellow
-{
-	color:#ff0
+.yellow {
+    color:#ff0 
 }
-.paleyellow
-{
-	color:#ffec8b
+.paleyellow {
+    color:#ffec8b 
 }
-.grey
-{
-	color:#bbb
+.grey {
+    color:#bbb 
 }
-.lightgrey
-{
-	color:#e2e2e2
+.lightgrey {
+    color:#e2e2e2 
 }
-.hide
-{
-	display:none
+.hide {
+    display:none 
 }
-.green
-{
-	color:#3a3
+.green {
+    color:#3a3 
 }
-
-.money
-{
-    color: #008000
+.money {
+    color: #008000 
 }
-
-.radioColor
-{
-	color:#ffec8b
+.radioColor {
+    color:#ffec8b 
 }
-.megafon
-{
-	color:#e7e700
+.megafon {
+    color:#e7e700 
 }
-
 .whisper {
-    color: #eda841
+    color: #eda841 
 }
-
 .carwhisper {
-    color: #fdfc1c
+    color: #fdfc1c 
 }
-
-.tavol
-{
-	color:#999999
+.tavol {
+    color:#999999 
 }
-.borton
-{
-	color:#fc6246
+.borton {
+    color:#fc6246 
 }
-.white
-{
-	color:#fff
+.white {
+    color:#fff 
 }
-textarea
-{
-	margin-top:20px
+textarea {
+    margin-top:20px 
 }
-pre.pre-scrollable
-{
-	max-height:100px
+pre.pre-scrollable {
+    max-height:100px 
 }
-.fontsize
-{
-	margin-bottom:20px
+.fontsize {
+    margin-bottom:20px 
 }
-.sp-replacer
-{
-	display:block;width:50px
+.sp-replacer {
+    display:block;
+   width:50px 
 }
 .button {
     width: 150px;
@@ -184,7 +149,6 @@ pre.pre-scrollable
     z-index: 10;
     border-radius: 10px;
 }
-
 .button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -201,19 +165,15 @@ pre.pre-scrollable
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
-
 .button:active {
-    color: #000
+    color: #000 
 }
-
 .button:active:after {
     background: transparent;
 }
-
 .button:hover:before {
     opacity: 1;
 }
-
 .button:after {
     z-index: -1;
     content: '';
@@ -225,9 +185,22 @@ pre.pre-scrollable
     top: 0;
     border-radius: 10px;
 }
-
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+   }
+    50% {
+        background-position: 400% 0;
+   }
+    100% {
+        background-position: 0 0;
+   }
+}
+.first-generated {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.last-generated {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
